@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+body {
+  position: relative;
+  background: url(../img/fggff-min.jpg);
+  width: 100%;
+  height: 662px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  margin-top: 35px;
+}
+.logo {
+  font-size: 22px;
+  color: darkgoldenrod;
+  width: 10px;
+  height: 10px;
+}
+/*navigation start*/
+.navigation {
+  text-align: end;
+  font-size: 22px;
+  position: relative;
+}
+
+.navigation .btn {
+  color: darkgoldenrod;
+  margin: 30px;
+  padding: 0px;
+  text-transform: initial;
+  font-family: candara;
+  font-weight: 600;
+}
+.navigation .btn:hover {
+  border: 3px solid darkgoldenrod;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 76px;
+  height: 36px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+}
+
+button.btnlogin {
+  font-size: 22px;
+  color: darkgoldenrod;
+  background: transparent;
+  border: 3px solid darkgoldenrod;
+  width: 76px;
+  height: 36px;
+  border-radius: 4px;
+  font-weight: 100;
+  cursor: pointer;
+  margin-right: 26px;
+}
+button.btnlogin:hover {
+  background: darkgoldenrod;
+  color: white;
+  transform: 0.7sec ease all;
+  font-weight: 600;
+}
+
+/* navigation end */
+/*wrapper start*/
+.wrapper {
+  text-align: center;
+  margin-top: 135px;
+  margin-left: 500px;
+  position: relative;
+  width: 364px;
+  height: 400px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: scale(0);
+}
+
+.form_box h2 {
+  font-size: 40px;
+  color: darkgoldenrod;
+  text-align: center;
+}
+.box {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border-bottom: 2px solid black;
+}
+
+.box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: darkgoldenrod;
+  font-weight: 500px;
+  cursor: pointer;
+}
+.box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  transform: 0.5s;
+  font-size: 15px;
+}
+
+.box input:focus ~ label,
+.box input:valid ~ label {
+  top: 3px;
+}
+.remember-forget {
+  margin-left: -22px;
+  margin-top: -1px;
+  padding: 32px;
+}
+a.Forget {
+  margin-left: 46px;
+  border-bottom: 2px solid;
+  font-size: 18px;
+  font-family: candara;
+  font-weight: 600;
+}
+button.btn {
+  height: 52px;
+  font-size: 33px;
+  font-family: candara;
+  text-transform: uppercase;
+  background: transparent;
+  width: 100%;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  background: darkgoldenrod;
+  border: none;
+  cursor: pointer;
+}
+.login-reg {
+  margin-top: 20px;
+  font-family: candara;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+a.registration_link {
+  border-bottom: 2px solid;
+}
+/*wrapper end*/
+/*active start*/
+.wrapper.active {
+  height: 440px;
+}
+.wrapper.active-popup {
+  transform: scale(1);
+  transition: 0.6s ease all;
+}
+.wrapper.active .form_box {
+  transition: none;
+  transform: translateX(-400px);
+}
+.wrapper .form_box {
+  transition: 0.6s ease all;
+  transform: translateX(0);
+}
+.wrapper .reg_box {
+  position: absolute;
+  transform: translateX(323px);
+}
+.wrapper.active .reg_box {
+  transition: 0.6s ease all;
+  transform: translateX(0);
+}
+/* active end*/
